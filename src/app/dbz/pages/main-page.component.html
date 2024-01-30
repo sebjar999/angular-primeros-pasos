@@ -1,0 +1,14 @@
+<h1>DBZ main </h1>
+<hr>
+
+<div class="row my-4">
+  <div class="col-lg-5 mx-5">
+    <dbz-list [characterList]="characters"
+     (onDelete)="onDeleteCharacter($event)">
+    </dbz-list> <!-- mandar de padre a hijos o asignar a un atributo se usa [] -->
+
+  </div>
+  <div class="col-lg-5 mx-2">
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
